@@ -23,7 +23,7 @@ namespace AsmForThreadsStream
             _ifFalseClause = ifFalseClause;
         }
 
-        public IEnumerable<IAtomic> GetOperations()
+        public IEnumerable<IAtomicOperation> GetOperations()
         {
             var conditionOps = _condition.Flattern().ToArray();
             foreach (var item in conditionOps)

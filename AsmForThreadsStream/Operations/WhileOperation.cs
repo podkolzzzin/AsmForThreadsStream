@@ -14,7 +14,7 @@ namespace AsmForThreadsStream
             _body = body;
         }
 
-        public IEnumerable<IAtomic> GetOperations()
+        public IEnumerable<IAtomicOperation> GetOperations()
         {
             var ops = new IfOperation(_condition, _body, new IOperation[0]).GetOperations();
             var gotoP = -ops.Count();
