@@ -2,9 +2,9 @@
 
 namespace AsmForThreadsStream
 {
-    abstract class AtomicOperation : IAtomic, IOperation
+    abstract class AtomicOperation : IAtomicOperation, IOperation
     {
-        public IEnumerable<IAtomic> GetOperations()
+        public IEnumerable<IAtomicOperation> GetOperations()
         {
             yield return this;
         }

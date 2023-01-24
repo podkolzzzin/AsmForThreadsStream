@@ -1,11 +1,11 @@
 ﻿namespace AsmForThreadsStream
 {
-    class PutConstantToRigister : AtomicOperation
+    class PutConstantToRegister : AtomicOperation
     {
         private readonly object _constant;
         private readonly int _register;
 
-        public PutConstantToRigister(object constant, int register)
+        public PutConstantToRegister(object constant, int register)
         {
             this._register = register;
             this._constant = constant;

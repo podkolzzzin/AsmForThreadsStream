@@ -1,6 +1,6 @@
 ﻿namespace AsmForThreadsStream
 {
-    interface IAtomic
+    interface IAtomicOperation
     {
         ExecutionContext Execute(ExecutionContext context);
     }

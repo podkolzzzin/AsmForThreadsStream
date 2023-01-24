@@ -4,7 +4,7 @@ namespace AsmForThreadsStream
 {
     class ExecutionThread
     {
-        private readonly IAtomic[] program;
+        private readonly IAtomicOperation[] program;
 
         private ExecutionContext executionContext = new ExecutionContext(0, new object[2]);
 

@@ -11,7 +11,7 @@ namespace AsmForThreadsStream
             var greenLamp = new Lamp();
 
             var t1 = new ExecutionThread(
-                new PutConstantToRigister(true, 0),
+                new PutConstantToRegister(true, 0),
                 new WhileOperation(new IOperation[]
                     {
                         new ExecuteOperation(ctx => redLamp.TurnOn()),
@@ -23,7 +23,7 @@ namespace AsmForThreadsStream
 
 
             var t2 = new ExecutionThread(
-                new PutConstantToRigister(true, 0),
+                new PutConstantToRegister(true, 0),
                 new WhileOperation(new IOperation[]
                     {
                         new ExecuteOperation(ctx => greenLamp.TurnOn()),

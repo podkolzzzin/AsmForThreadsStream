@@ -4,6 +4,6 @@ namespace AsmForThreadsStream
 {
     interface IOperation
     {
-        IEnumerable<IAtomic> GetOperations();
+        IEnumerable<IAtomicOperation> GetOperations();
     }
 }
